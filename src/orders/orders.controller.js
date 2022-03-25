@@ -22,9 +22,7 @@ function create(req, res) {
     status: "delivered",
     dishes,
   };
-  console.log(newOrder)
   orders.push(newOrder);
-  console.log(newOrder, "1")
   res.status(201).json({ data: newOrder });
 }
 // not the async problem
